@@ -42,12 +42,12 @@ Players start with a certain number of lives, and a wrong answer results in losi
 ## Screenshots
 
 ### Gameplay Screen
-![Gameplay Screen](\assets\signpage.png)
+![Gameplay Screen](assets/signpage.png)
 
-![Gameplay Screen](\assets\loginpg.png)
+![Gameplay Screen](assets/loginpg.png)
 
-![Gameplay Screen](\assets\gamepage.png)
+![Gameplay Screen](assets/gamepage.png)
 
-![Gameplay Screen](\assets\game-over.png)
+![Gameplay Screen](assets/game-over.png)
 
-![Gameplay Screen](\assets\profilepg.png)
+![Gameplay Screen](assets/profilepg.png)
