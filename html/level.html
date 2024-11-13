@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Game</title>
+    <link rel="stylesheet" href="/css/level.css">
+</head>
+<body>
+    <section class="container">
+        <div class="main">
+            
+            <div class="header">
+
+                <div class="profile-section">
+                    <span class="profile-photo" onclick="window.location.href = '/html/profile.html'"> 
+                        <img src="" alt="Profile" id="profileImage">
+                    </span>
+                    <div id="profileName" class="profile-name">Your Name</div>
+                </div>
+
+                <span>Time: <span id="time">30</span>s</span>
+                <span>Level <span id="level">1</span></span>
+                <span>Score: <span id="score">0</span></span>
+                
+                <div class="lives-img">
+                    <img src="/assets/icons8-heart-50.png" id="live1" class="heart" alt="">
+                    <img src="/assets/icons8-heart-50.png" id="live2" class="heart" alt="">
+                    <img src="/assets/icons8-heart-50.png" id="live3" class="heart" alt="">
+                </div>
+
+            </div>
+
+            <div class="center">
+                <div id="question-section">
+                    <div class="sum">6 x 9</div>
+                </div>
+            </div>
+
+            <div id="answer-section">
+                <div id="box1" class="box">1</div>
+                <div id="box2" class="box">2</div>
+                <div id="box3" class="box">3</div>
+                <div id="box4" class="box">4</div>
+            </div>
+
+            <div class="start-game">
+                <button id="startGameBtn" class="submitBtn">Start Game</button>
+            </div>
+
+            <div id="gameOver" style="display: none;"></div>
+        </div>
+    </section>
+    
+    <script src="/js/level.js"></script>
+</body>
+</html>

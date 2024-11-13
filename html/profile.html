@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="/css/profile.css">
+</head>
+<body>
+    <section class="container">
+        <div class="main">
+    
+            <h2>Profile Information</h2>
+
+            <div class="profile-section">
+                <span class="profile-photo"> 
+                    <img src="" alt="Profile" id="profileImage">
+                </span>
+                <input type="file" id="profileUpload" accept="image/*" style="display: none;" />
+            </div>
+
+            <div class="profile-info">
+                <p>Name: <span id="profileName">Your Name</span></p>
+                <p>Email: <span id="profileEmail">your.email@example.com</span></p>
+                <p>Highscore: <span id="highScore">0</span></p>
+            </div>
+
+            <div class="buttons">
+                <button onclick="window.open('/html/level.html', '_self')">Back</button>
+                <button onclick="window.open('/html/login.html','_self')">Exit</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="/js/profile.js"></script>
+</body>
+</html>
+

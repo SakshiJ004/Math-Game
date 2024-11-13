@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5dc;
+    background-image: url('/assets/background1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+    .main {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 2px solid #8b4513;
+        border-radius: 15px;
+        padding: 40px;
+        width: 100%;
+        max-width: 800px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        position: relative;
+        top: -70px;
+
+
+        .form-container {
+            h2 {
+                margin-bottom: 30px;
+                text-align: center;
+                color: #4b5320;
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            .message {
+                margin-bottom: 15px;
+                font-size: 1.2em;
+                text-align: center;
+            }            
+
+            #signForm {
+                .input-group {
+                    margin-bottom: 20px;
+
+                    label {
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 8px;
+                        color: #8b4513;
+                        font-weight: bold;
+                    }
+
+                    input {
+                        width: 100%;
+                        padding: 12px;
+                        border: 2px solid #556b2f;
+                        box-shadow: 0 0 5px rgba(85, 107, 47, 0.5);
+                        outline: none;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        background-color: white;
+                    }
+
+                    .password-container {
+                        position: relative;
+                        width: 100%;
+
+                        #togglePassword {
+                            position: absolute;
+                            right: 10px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            cursor: pointer;
+                            width: 25px;
+                        }
+                    }
+
+                }
+
+                .submitBtn {
+                    background: linear-gradient(135deg, #6b8e23, #556b2f);
+                    color: #ffffff;
+                    border: none;
+                    padding: 12px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    font-size: 20px;
+                    width: 100%;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                }
+
+                .submitBtn:hover {
+                    background: linear-gradient(135deg, #556b2f, #6b8e23);
+                    transform: scale(1.03);
+                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+                }
+            }
+
+            .login-link {
+                margin-top: 20px;
+                text-align: center;
+                font-size: 15px;
+                color: #8b4513;
+
+                p {
+                    a {
+                        color: #4b5320;
+                        text-decoration: none;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        .main {
+            padding: 20px;
+
+            .form-container {
+                h2 {
+                    font-size: 24px;
+                }
+                #signForm {
+                    .input-group {
+                        input {
+                            font-size: 14px;
+                            padding: 10px;
+                        }
+                    }
+                    .submitBtn {
+                        width: 70%;
+                        font-size: 16px;
+                    }
+                }
+            }
+    
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+
+        .main {
+            padding: 15px;
+            max-width: 100%;
+            top: -30px;
+
+            h2 {
+                font-size: 22px;
+            }
+
+            #signForm {
+                .input-group {
+                    label {
+                        font-size: 14px;
+                    }
+
+                    input {
+                        font-size: 14px;
+                        padding: 8px;
+                    }
+
+                }
+                .submitBtn {
+                    width: 100%;
+                    font-size: 16px;
+                    padding: 10px;
+                }
+            }
+            .login-link p {
+                font-size: 14px;
+            }
+        }
+    }
+}
